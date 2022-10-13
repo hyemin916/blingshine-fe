@@ -1,15 +1,18 @@
 import { Navigate, useRoutes } from 'react-router-dom';
 
-import Chart from '@/pages/Chart';
 import NotFound from '@/pages/NotFound';
+import SignIn from '@/pages/SignIn';
 
 const Router = () =>
   useRoutes([
-    { path: '/chart', element: <Chart /> },
+    {
+      path: '/signin',
+      element: <SignIn />,
+    },
     {
       path: '/',
       children: [
-        { path: '/', element: <Navigate to="/chart" /> },
+        { path: '/', element: <Navigate to="/signin" /> },
         { path: '404', element: <NotFound /> },
         { path: '*', element: <Navigate to="/404" /> },
       ],
