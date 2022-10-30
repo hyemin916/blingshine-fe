@@ -5,7 +5,7 @@ import SignInForm from './components/SignInForm';
 
 const SignIn = () => {
   return (
-    <Container component="main" sx={{ mt: 40 }}>
+    <Container sx={styles.container}>
       <Card sx={styles.card}>
         <SignInForm />
       </Card>
@@ -16,12 +16,16 @@ const SignIn = () => {
 export default SignIn;
 
 const styles = {
+  container: {
+    display: 'flex',
+    flexDirection: 'column',
+    height: '100%',
+    justifyContent: 'center',
+  },
   card: {
     display: 'flex',
     flexDirection: 'column',
     alignItems: 'center',
-    width: '40%',
-    m: 'auto',
     p: 4,
   },
 };

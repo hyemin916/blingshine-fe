@@ -14,6 +14,10 @@ const typography: TypographyOptions = {
     '"Segoe UI Emoji"',
     '"Segoe UI Symbol"',
   ].join(','),
+  h2: {
+    fontSize: '2rem',
+    fontWeight: 'bold',
+  },
 };
 
 export default typography;

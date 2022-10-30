@@ -1,3 +1,5 @@
+import './global.css';
+
 import React from 'react';
 
 import Router from '@/Router';
@@ -7,8 +9,10 @@ import ThemeProvider from '@/theme';
 const App = () => {
   return (
     <ThemeProvider>
-      <DebugAtoms />
-      <Router />
+      <main>
+        <DebugAtoms />
+        <Router />
+      </main>
     </ThemeProvider>
   );
 };
